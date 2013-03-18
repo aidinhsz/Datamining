@@ -1,0 +1,52 @@
+
+# read data
+x = read.table("test.txt", sep="\n")
+# x = read.table("course-text-1.txt", sep="\n")
+Data = apply(x,1, function(i)strsplit(i,"\\s")[[1]])
+numtrans = length(Data)
+
+
+apply(aa,2,function(i) union(i,aa[1,]))
+
+
+
+
+# extract length of transactions
+maxLen <- max(sapply(Data, length))
+
+# generate symmetric data set
+symmData <- lapply(Data, function(x) {c(x, rep(NA, maxLen - length(x)))})
+symmMat <- do.call(rbind, symmData)
+uniValue <- c(na.exclude(unique(c(symmMat))))
+
+minSup = 0.2;
+L = list()
+L_0 = uniValue
+
+k = 1
+temp = t(combn(uniValue,k))
+C_1 = temp
+SC_1 = apply(C_1,1, function(x) sum(apply(symmMat,1,function(i) all(is.element(x,i)))))
+S_1 = SC_1/numtrans
+L_1 = C_1[S_1>minSup,]
+L[[k]] = L_1
+L_t = t(L_1)
+L
+
+for (k in 2:(length(uniValue)-1)) {
+	print(k)
+	temp = t(combn(uniValue,k))
+	ind = apply(temp,1,function(j)all(apply(t(combn(j,k-1)),1, function(i) max(colSums(apply(L_t,1,function(x) i == x))) == k-1)))
+	print("indc computed")
+	if(any(ind)==TRUE) {
+		print("if-state")
+		C = as.matrix(temp[ind,])
+		SC = apply(C,1, function(x) sum(apply(symmMat,1,function(i) all(is.element(x,i)))))
+		S = SC/numtrans
+		L_t = C[S>minSup,]
+		L[[k]] = L_t
+	} else {
+		break
+	}
+}
+

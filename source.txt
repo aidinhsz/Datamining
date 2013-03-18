@@ -1,0 +1,64 @@
+
+# read data
+
+sum_list <- function(x){
+	result = Reduce("+",x)
+	return(result)
+}
+
+
+x = read.table("course-text.txt", sep="\n")
+course_list = apply(x,1, function(i)strsplit(i,"\\s")[[1]])
+num_transactions = length(course_list)
+
+# extract course names
+course_name_list <- unique(unlist(course_list))
+
+
+# extract length of transactions
+course_list_length = sapply(course_list, length)
+
+# extract maximum transaction
+max.len <-max(sapply(course_list, length))
+
+# generate symmetric course_list
+corrected_course_list <- lapply(course_list, function(x) {c(x, rep(NA, max.len - length(x)))})
+
+# generate symmetric course_list
+symmetric_course_list <- lapply(course_list, function(x) {c(x, rep(NA, max.len - length(x)))})
+symmetric_course_mat <- do.call(rbind, corrected_course_list)
+course_name_vector <- na.exclude(unique(c(symmetric_course_mat)))
+
+min_sup = 0.3;
+
+item_set_1 = unlist(course_list)
+L_0 = c(course_name_vector)
+
+C_1 = t(combn(L_0,1))
+SC_1 = apply(C_1,1, function(x) sum(apply(symmetric_course_mat,1,function(i) all(is.element(x,i)))))
+S_1 = SC_1/num_transactions
+L_1 = C_1[S_1>min_sup]
+
+C_2 = t(combn(L_0,2))
+ind = apply(C_2,1, function(i) all(is.element(i,L_1)))
+C_2 = C_2[ind,]
+SC_2 = apply(C_2,1, function(x) sum(apply(symmetric_course_mat,1,function(i) all(is.element(x,i)))))
+S_2 = SC_2/num_transactions
+L_2 = C_2[S_2>min_sup]
+
+C_3 = t(combn(L_0,3))
+ind = apply(C_3,1, function(i) all(is.element(i,L_2)))
+C_3 = C_3[ind,]
+SC_3 = apply(C_3,1, function(x) sum(apply(symmetric_course_mat,1,function(i) all(is.element(x,i)))))
+S_3 = SC_3/num_transactions
+L_3 = C_3[S_3>min_sup]
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+Programming Project 
+Computer Organization 
+Introduction to UNIX 
+Information Systems 
+Data Structures 
+Data Structures Project 
+Programming in C 
+Programming (Pascal) 
+Information Systems Project 
+Concurrent Systems 
+Scientific Writing 
+Database Systems I 
+Software Engineering 
+Models for Programming and Computing 
+Introduction to Application Design 
+Programming in Java 
+Introduction to Databases 
+Introduction to Programming 
+Teacher Tutoring 
+Introduction to Computing 
+Introduction to the Use of Computers 
+Data Communications 
+Software Engineering Project 
+Database Application Project 
+Data Communications 
+Johdatus ohjelmointiin 
+Tietojenkasittelytieteen esittely 
+Atk-tyokokemus 
+Tietotekniikan alkeet 
+Laskennan teoria 
+Tietokoneen toiminta 
+Ohjelmointitekniikka (C++) 
+Tietokannan hallinta 
+Tietokonegrafiikka 
+Digitaalisen median tekniikat 
+Kayttojarjestelmat I 
+Rinnakkaisohjelmistot 
+Xml-metakieli 
+Kayttoliittymat 
+Atk:n perusteet 
+Kayttoliittymat 
+Laskennan teoria 
+Uusmediasovellusten tekniikat 
+Julkaisutekniikan alkeet 
+Java-ohjelmointi 
+Tekoalykielet 
+Ohjelmistotuotanto 
+Tietotekniikka: Nyt! 
+Unix-sovellusalusta 
+Korvaavat suoritukset muissa oppilaitoksissa 
+Tietokoneavusteiset oppimisymparistot 
+Hajautetut kayttojarjestelmat 
+Tekoaly 
+Tiedonhallinta II 
+Ohjelmistoarkkitehtuurit 
+Perl-ohjelmointikieli 
+Tietokoneen rakenne 
+Ohjelmistoprosessit ja ohjelmistojen laatu 
+Ohjelmointikielten kaantajat 
+Tietoturva 
+Tietamyksen muodostaminen 
+Rakenteisten dokumenttien kasittely 
+Tietorakenteet 
+Kayttoliittymat II 
+Algoritmien suunnittelu ja analyysi 
+Corba-arkkitehtuuri 
+Ohjelmistojen tuotteistaminen 
+Hajautettujen ohjelmistojen toteuttaminen 
+Tietorakenteet 
+Tietoliikenne II 
+Tietokone tyovalineena 
+Ohjelmointitekniikka (Java) 
+Kayttojarjestelmat II 
+Korvaavat suoritukset muissa oppilaitoksissa (tietojenkasittelyopin opinnot) 
+Ohjelmien semantiikka 
+Ohjelmistoprojektien johtaminen 
+Johdatus tietotekniikkaoikeuteen 
+Tietokantarakenteet ja -algoritmit 
+Ohjelmistojen testaus 
+Olio-ohjelmointi 
+Laajojen dokumenttiaineistojen kasittely 
+Tiedonhakumenetelmat 
+Tapahtumakasittely 
+Tietovarastot 
+Tietojenkasittely ihmisessa: Hidasta ja tehotonta? 
+Tietojenkasittelytieteen approbatur paaaineoppimaara 
+Tietokone tyovalineena (sivuaineopiskelijoille) 
+Verkkokaupan tuki internetissa 
+Tutkimustiedonhallinnan peruskurssi 
+Algoritmisen tietojenkasittelyn perusteet 
+Tietojenkasittelyn menetelmia 
+Tietokannan mallinnus 
+Spesifioinnin ja verifioinnin perusteet 
+Algoritmien oikeellisuus ja johtaminen 
+Paikkatietojarjestelmat 
+Tekoalyn filosofia 
+Robotiikka 
+Symbolinen ohjelmointi 
+Introduction to computers 
+Geometriset menetelmat 
+Hajautetut jarjestelmat 
+Seminaari: Adaptiiviset oppimisymparistot 
+Koneoppiminen 
+Tietokonearkkitehtuurit 
+Kolme kasitetta: Informaatio 
+Tiedon eristaminen tekstista 

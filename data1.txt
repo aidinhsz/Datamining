@@ -1,0 +1,15 @@
+1 -itemset frequent pattern :
+"V1"
+"1"	"A"
+"2"	"B"
+"3"	"C"
+"4"	"E"
+
+2 -itemset frequent pattern :
+"V1"	"V2"
+"1"	"A"	"B"
+"2"	"A"	"C"
+"3"	"A"	"E"
+"4"	"B"	"C"
+"5"	"C"	"E"
+
