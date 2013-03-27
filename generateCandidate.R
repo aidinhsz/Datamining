@@ -6,7 +6,7 @@ generateCandidate <- function(C,k,nI) {
     N = nrow(C)
     # sort data
     C = t(apply(C,1,sort))
-    C = C[do.call(order,as.list(as.data.frame(C))),]
+    C = C[do.call(order2,as.list(as.data.frame(C))),]
     F = matrix(nrow=N*(nI-k+1)/k, ncol=k)
     ind = 0
 

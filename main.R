@@ -6,7 +6,7 @@
 message('reading data from text file...')
 # Y = readData("ds_alphabetic.txt")
 # Y = readData("test.txt")
-Y = readData("course-text.txt")
+Y = lapply(readData("course-text.txt"),sort)
 nT = length(Y)    # estimate number of transactions
 w = maxLen <- max(sapply(Y, length))
 
@@ -60,7 +60,7 @@ while (!breakFlag) {
       break
    }
    message('pruning candidates...')
-   C = pruneInfreqCandidate2(C,F,k)     # apply candidate candidate pruning
+   C = pruleneInfreqCandidate2(C,F,k)     # apply candidate candidate pruning
    if (length(C)==0) {
       message('no candidates survived from pruning. process terminated.')
       break

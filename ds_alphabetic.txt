@@ -7,12 +7,17 @@ C E
 A B C E
 A C E
 A E D
-A
+A B
 B C D
-E
+E C
 E A
 C E
-A C
-A C
-A C
+A C D
+A C D
+A C B
 B C D
+C B D
+D E A
+B C
+B C
+C A D
